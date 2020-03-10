@@ -1,0 +1,72 @@
+<mvc:View controllerName="demo.three.controller.Home" 
+    xmlns="sap.m" 
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:l="sap.ui.layout"
+    xmlns:grid="sap.ui.layout.cssgrid">
+    <Page title="{i18n>homePageTitle}" class="sapUiResponsiveContentPadding">
+        <content > 
+            <grid:CSSGrid>
+                <grid:customLayout>
+                    <grid:GridResponsiveLayout>
+                        <grid:layoutXL>
+                            <grid:GridSettings
+                                gridTemplateColumns="1fr 1fr 1fr" 
+                                gridTemplateRows="52px auto auto"                                                        
+                                >
+                            </grid:GridSettings>
+                        </grid:layoutXL>
+                         <grid:layoutL>
+                            <grid:GridSettings
+                                gridTemplateColumns="1fr 1fr 1fr" 
+                                gridTemplateRows="52px auto auto"                              
+                                >
+                            </grid:GridSettings>
+                        </grid:layoutL>
+                         <grid:layoutM>
+                            <grid:GridSettings 
+                                gridTemplateColumns="1fr 4fr 1fr" 
+                                gridTemplateRows="52px auto auto"                              
+                                >
+                            </grid:GridSettings>
+                        </grid:layoutM>
+                         <grid:layoutS>
+                            <grid:GridSettings
+                                gridTemplateColumns="1fr 4fr 1fr"
+                                gridTemplateRows="52px auto auto"                                
+                                >
+                            </grid:GridSettings>
+                        </grid:layoutS>
+                    </grid:GridResponsiveLayout>
+                </grid:customLayout>
+                <VBox alignItems="Center">
+                   	<layoutData>
+                        <grid:GridItemLayoutData
+                            gridColumn="2 / 3"
+                            gridRow="1" />
+					</layoutData>
+                    <Text text="Enter Login Details"></Text>                   
+                </VBox>
+                <VBox>
+                   <layoutData>
+                        <grid:GridItemLayoutData
+                            gridColumn="2 / 3"
+                            gridRow="2" />
+					</layoutData>
+                    <Label text="Enter FirstName" labelFor="firstname" />
+                    <Input
+                        id="firstname"
+                        type="Text"
+                        placeholder="Enter FirstName">			
+                    </Input>
+                      <Label text="Enter LastName" labelFor="lastname" />
+                    <Input
+                        id="lastname"
+                        type="Text"
+                        placeholder="Enter LastName">			
+                    </Input>
+                 
+                </VBox>            
+            </grid:CSSGrid> 
+        </content>
+    </Page>
+</mvc:View>
