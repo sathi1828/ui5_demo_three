@@ -38,9 +38,6 @@
 				"settings": {
 					"bundleName": "demo.three.i18n.i18n"
 				}
-			},
-			"invoice": {
-				"dataSource": "invoiceRemote"
 			}
 		},
 		"resources": {

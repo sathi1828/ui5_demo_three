@@ -11,38 +11,46 @@
                         <grid:layoutXL>
                             <grid:GridSettings
                                 gridTemplateColumns="1fr 1fr 1fr" 
-                                gridTemplateRows="52px auto auto"                                                        
+                                gridTemplateRows="100px 50px auto auto"                                                                                  
                                 >
                             </grid:GridSettings>
                         </grid:layoutXL>
                          <grid:layoutL>
                             <grid:GridSettings
                                 gridTemplateColumns="1fr 1fr 1fr" 
-                                gridTemplateRows="52px auto auto"                              
+                                gridTemplateRows="100px 50px auto auto"                              
                                 >
                             </grid:GridSettings>
                         </grid:layoutL>
                          <grid:layoutM>
                             <grid:GridSettings 
                                 gridTemplateColumns="1fr 4fr 1fr" 
-                                gridTemplateRows="52px auto auto"                              
+                                gridTemplateRows="100px 50px auto auto"                              
                                 >
                             </grid:GridSettings>
                         </grid:layoutM>
                          <grid:layoutS>
                             <grid:GridSettings
                                 gridTemplateColumns="1fr 4fr 1fr"
-                                gridTemplateRows="52px auto auto"                                
+                                gridTemplateRows="100px 50px auto auto"                                
                                 >
                             </grid:GridSettings>
                         </grid:layoutS>
                     </grid:GridResponsiveLayout>
                 </grid:customLayout>
                 <VBox alignItems="Center">
-                   	<layoutData>
+                    <layoutData>
                         <grid:GridItemLayoutData
                             gridColumn="2 / 3"
                             gridRow="1" />
+					</layoutData>
+                    <Image src="../assets/Images/openui.png" height="80px"/>    
+                </VBox>
+                <VBox alignItems="Center">
+                   	<layoutData>
+                        <grid:GridItemLayoutData
+                            gridColumn="2 / 3"
+                            gridRow="2" />
 					</layoutData>
                     <Text text="Enter Login Details"></Text>                   
                 </VBox>
@@ -50,21 +58,29 @@
                    <layoutData>
                         <grid:GridItemLayoutData
                             gridColumn="2 / 3"
-                            gridRow="2" />
+                            gridRow="3" />
 					</layoutData>
-                    <Label text="Enter FirstName" labelFor="firstname" />
+                    <Label text="Enter FirstName" labelFor="firstname"/>
                     <Input
                         id="firstname"
                         type="Text"
-                        placeholder="Enter FirstName">			
+                        placeholder="Enter FirstName"
+                        required = "true">			
                     </Input>
                       <Label text="Enter LastName" labelFor="lastname" />
                     <Input
                         id="lastname"
                         type="Text"
                         placeholder="Enter LastName">			
-                    </Input>
-                 
+                    </Input>                 
+                </VBox>
+                <VBox alignItems="Center">
+                    <layoutData>
+                        <grid:GridItemLayoutData
+                            gridColumn="2 / 3"
+                            gridRow="4" />
+					</layoutData>
+                    <Button text="Login"></Button>
                 </VBox>            
             </grid:CSSGrid> 
         </content>

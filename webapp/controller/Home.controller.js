@@ -7,7 +7,7 @@ sap.ui.define([
  
     return BaseController.extend("demo.three.controller.Home", {
          onInit:function(){
-            var oModel = new ODataModel("https://services.odata.org/Northwind/Northwind.svc/");
+            // var oModel = new ODataModel("https://services.odata.org/Northwind/Northwind.svc/");
          }
     });
  
