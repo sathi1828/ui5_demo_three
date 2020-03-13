@@ -52,7 +52,7 @@
                "routerClass": "sap.m.routing.Router",
                "viewType": "XML",
                "viewPath": "demo.three.view",
-               "controlId": "app",
+               "controlId": "routing",
                "controlAggregation": "pages",
                "transition": "slide",
                "bypassed": {

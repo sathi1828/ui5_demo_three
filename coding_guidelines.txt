@@ -1,16 +1,20 @@
 # folder structure 
-    app_folder
-        ->webapp_folder
-            ->view_folder
-            ->controller_folder  
-            ->i18n_folder
-            ->assets_folder
-                ->images_folder
-            ->css_folder
-            ->index.html_file
-            ->Component.js_file
-            ->manifest.json_file
+app_folder
+    ->webapp_folder
+        ->view_folder
+        ->controller_folder  
+        ->i18n_folder
+        ->assets_folder
+            ->images_folder
+        ->css_folder
+        ->index.html_file
+        ->Component.js_file
+        ->manifest.json_file
 
+# production build 
+    1. ui5 cli tooling is used to build for production.
+    2. 'ui5 build' command is used for production build.
+    3. 'ui5 serve' is used to run the app on locally(localhost).
 
 # steps involved for bootstrapping
     1.serve the index file through the server
@@ -41,4 +45,3 @@
     1. create i18n_languageCode_IN.properties file for each language that the app should support
     2. browser loads the respective .properties file based on the language set or location.
     3. default file is i18n.properties file if respective language file not found.
-    
