@@ -1,0 +1,44 @@
+# folder structure 
+    app_folder
+        ->webapp_folder
+            ->view_folder
+            ->controller_folder  
+            ->i18n_folder
+            ->assets_folder
+                ->images_folder
+            ->css_folder
+            ->index.html_file
+            ->Component.js_file
+            ->manifest.json_file
+
+
+# steps involved for bootstrapping
+    1.serve the index file through the server
+    2. index file executes onit and loads Component.js file
+    3. Component file loads manifest.json file through metadata 
+    4. manifest.json sets up the routing configuration,displays the route views in the root view.
+    5. root view is also configured in manifest json file and usually 
+        App.view.xml file is set up as root view and the route view is displayed inside that file.
+    6. serve -> index.html -> Component.js -> manifest.json -> routing config -> App.view.xml  
+        ->route_views
+
+# Component.js and manifest file 
+    1. Component file acts as initialisation step
+    2. manifest json is known as Application Descriptor file since it contains app version, routing info,root view info, OData and related model info
+
+# BaseController.js
+    1. create this file inside controller folder.
+    2. write all the common methods used by all views in this file and call them from respective controller.
+    
+
+# view folder and controller folder
+    1. create all the view files(ex:App.view.xml) inside view folder.
+    2. create all the controller files in the controller folder.
+    3. create sub_folders(ex:login folder) and add all the respective views and controller files 
+        inside the respective folders.
+
+# Internationalization (i18n folder) 
+    1. create i18n_languageCode_IN.properties file for each language that the app should support
+    2. browser loads the respective .properties file based on the language set or location.
+    3. default file is i18n.properties file if respective language file not found.
+    

@@ -5,7 +5,7 @@ sap.ui.define([
  ], function (BaseController,ODataModel) {
     "use strict";
  
-    return BaseController.extend("demo.three.controller.Home", {
+    return BaseController.extend("demo.three.controller.login.Login", {
          onInit:function(){
             // var oModel = new ODataModel("https://services.odata.org/Northwind/Northwind.svc/");
          }

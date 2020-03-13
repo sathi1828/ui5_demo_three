@@ -62,13 +62,13 @@
             },
             "routes": [{
                "pattern": "",
-               "name": "appHome",
-               "target": "home"
+               "name": "login",
+               "target": "login"
             }],
             "targets": {
-               "home": {
-                  "viewId": "home",
-                  "viewName": "Home",
+               "login": {
+                  "viewId": "login",
+                  "viewName": "login.Login",
                   "viewLevel" : 1
                },
                "notFound": {
