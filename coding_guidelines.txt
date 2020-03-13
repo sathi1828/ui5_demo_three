@@ -11,13 +11,16 @@ app_folder
         ->Component.js_file
         ->manifest.json_file
 
-# production build 
+# production build
     1. ui5 cli tooling is used to build for production.
     2. 'ui5 build' command is used for production build.
     3. 'ui5 serve' is used to run the app on locally(localhost).
 
 # mobile build using cordova for android and ios
-    1. create a cordova basic(get started) project using 'cordova create' command
+    1. create a cordova basic(get started) project using 'cordova create' command.
+        add android and ios platforms using command 'cordova platform add android'  and 
+        'cordova platform add ios'
+
     2. copy the 'webapp' folder from the ui5 app to the 'www' folder of the newly created cordova project.
     3. move the 'index.html' file from 'webapp' folder to 'www' foolder.
     4. www
