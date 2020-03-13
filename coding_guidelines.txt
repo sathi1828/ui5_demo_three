@@ -16,6 +16,24 @@ app_folder
     2. 'ui5 build' command is used for production build.
     3. 'ui5 serve' is used to run the app on locally(localhost).
 
+# mobile build using cordova for android and ios
+    1. create a cordova basic(get started) project using 'cordova create' command
+    2. copy the 'webapp' folder from the ui5 app to the 'www' folder of the newly created cordova project.
+    3. move the 'index.html' file from 'webapp' folder to 'www' foolder.
+    4. www
+        ->webapp_folder
+        ->index.html_file
+    5. change < data-sap-ui-resourceroots='{"ur_app_id": "./"}' >  in index.html file to
+        data-sap-ui-resourceroots='{"ur_app_id": "./webapp"}'.
+
+    6. connect android mobile (usb debugging enabled) and run the command 'cordova run android'.
+        This starts android build by cordova and afer the build completion the app loads in the mobile
+
+    7. similarly for ios connect the mobile and configure xcode and run
+        for testing in xcode simulator use the below commands
+        a. cordova emulate ios --list.
+        b. cordova emulate ios --target="iPad-Pro--11-inch-, 13.3"
+
 # steps involved for bootstrapping
     1.serve the index file through the server
     2. index file executes onit and loads Component.js file
