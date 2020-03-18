@@ -8,6 +8,12 @@
 		"description": "{{appDescription}}",
 		"applicationVersion": {
 			"version": "1.0.0"
+		},
+		"dataSources": {
+			"northWindService": {
+				"uri": "http://localhost:8081/services.odata.org/Northwind/Northwind.svc/",
+				"type": "OData"			
+			}
 		}
     },
  
@@ -37,6 +43,16 @@
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
 					"bundleName": "demo.three.i18n.i18n"
+				}
+			},
+			"northWind": {
+				"dataSource": "northWindService",
+				"type": "sap.ui.model.odata.v2.ODataModel",
+				"preload": true,
+				"settings": {
+					"useBatch": false,
+					"json": true,
+					"defaultBindingMode": "TwoWay"
 				}
 			}
 		},
