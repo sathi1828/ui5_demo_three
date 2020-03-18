@@ -37,6 +37,9 @@ app_folder
         a. cordova emulate ios --list.
         b. cordova emulate ios --target="iPad-Pro--11-inch-, 13.3"
 
+# proxy.js files
+    this file is used to avoid CORS block in browser while connecting to OData Services.
+    
 # steps involved for bootstrapping
     1.serve the index file through the server
     2. index file executes onit and loads Component.js file
